@@ -4,7 +4,9 @@
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">#EAD6EE</item>
+<!--        <item name="colorPrimaryDark">#EAD6EE</item>-->
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
         <item name="colorAccent">#C2BABA</item>
     </style>
 
