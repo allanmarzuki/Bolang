@@ -15,9 +15,6 @@ import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_login.*
 import java.lang.reflect.Modifier
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.view.View
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -61,8 +58,7 @@ class loginActivity : AppCompatActivity() {
         }
 
         btn_login.setOnClickListener(View.OnClickListener {
-            intent = Intent(this, Home_Activity::class.java)
-            startActivity(intent)
+            onClick()
         })
 
     }
@@ -82,6 +78,8 @@ class loginActivity : AppCompatActivity() {
                         val editor: SharedPreferences.Editor = sharedPreferences.edit()
                         editor.putString(username_key, xusername.text.toString())
                         editor.apply()
+                        val intent = Intent(this@loginActivity,Home_Activity::class.java)
+                        startActivity(intent)
                     }
                     else{
                         Toast.makeText(applicationContext, "password salah", Toast.LENGTH_SHORT).show()
