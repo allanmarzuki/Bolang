@@ -1,5 +1,6 @@
 package com.example.ngebolang
 
+
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,14 @@ import android.widget.Toast
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_login.*
 import java.lang.reflect.Modifier
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_login.*
+
+
 
 class loginActivity : AppCompatActivity() {
     private lateinit var xusername:EditText
@@ -24,9 +33,12 @@ class loginActivity : AppCompatActivity() {
     val USERNAME_KEY:String = "usernamekey"
     val username_key:String = ""
 
+    private lateinit var sign_up : TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
 
         xusername = findViewById(R.id.xusername)
         xpassword = findViewById(R.id.xpassword)
@@ -40,6 +52,19 @@ class loginActivity : AppCompatActivity() {
         showHideBtn.setOnClickListener{
            onShow()
         }
+
+        sign_up = findViewById(R.id.txt2_sign_up)
+
+        sign_up.setOnClickListener {
+            val go_sign_up = Intent(this, activity_signup::class.java)
+            startActivity(go_sign_up)
+        }
+
+        btn_login.setOnClickListener(View.OnClickListener {
+            intent = Intent(this, Home_Activity::class.java)
+            startActivity(intent)
+        })
+
     }
 
     fun onClick() {

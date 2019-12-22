@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ngebolang.Home_Activity"
+    android:background="#F2F8F8">
+
+    <View
+        android:id="@+id/imageView"
+        android:layout_width="456dp"
+        android:layout_height="200dp"
+        android:background="@drawable/gradient_blue_anjay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.github.florent37.shapeofview.shapes.CircleView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/pict_photo_home_user"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/uty" />
+    </com.github.florent37.shapeofview.shapes.CircleView>
+
+    <TextView
+        android:id="@+id/txt_nama"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/leelawadee"
+        android:text="Nama Saya"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txt_grade_user"
+        android:layout_width="114dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginEnd="225dp"
+        android:fontFamily="@font/leelawadee"
+        android:text="Profesional"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nama" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="397dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_layout_white"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_grade_user">
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
