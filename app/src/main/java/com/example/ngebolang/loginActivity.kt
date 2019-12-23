@@ -31,6 +31,7 @@ class loginActivity : AppCompatActivity() {
     val username_key:String = ""
 
     private lateinit var sign_up : TextView
+    private lateinit var get_help : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,16 +52,26 @@ class loginActivity : AppCompatActivity() {
         }
 
         sign_up = findViewById(R.id.txt2_sign_up)
+        get_help = findViewById(R.id.txt2_sign_up_help)
 
         sign_up.setOnClickListener {
             val go_sign_up = Intent(this, activity_signup::class.java)
             startActivity(go_sign_up)
         }
 
+        get_help.setOnClickListener {
+            go_help()
+        }
+
         btn_login.setOnClickListener(View.OnClickListener {
             onClick()
         })
 
+    }
+
+    fun go_help(){
+        val go_get_help = Intent(this@loginActivity, activity_login_help1::class.java)
+        startActivity(go_get_help)
     }
 
     fun onClick() {
@@ -107,5 +118,6 @@ class loginActivity : AppCompatActivity() {
             showHideBtn.text = ""
         }
     }
+
 
 }
