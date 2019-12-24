@@ -43,6 +43,7 @@ class loginActivity : AppCompatActivity() {
         btn_login = findViewById(R.id.btn_login)
         showHideBtn = findViewById(R.id.showHideBtn)
 
+
         btn_login.setOnClickListener {
             onClick()
         }
@@ -91,13 +92,14 @@ class loginActivity : AppCompatActivity() {
                         editor.apply()
                         val intent = Intent(this@loginActivity,Home_Activity::class.java)
                         startActivity(intent)
+                        finish()
                     }
                     else{
-                        Toast.makeText(applicationContext, "password salah", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(applicationContext, "Incorrect password", Toast.LENGTH_SHORT).show()
                     }
                 }
                 else{
-                    Toast.makeText(applicationContext, "username tidak ada", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, "Username not found", Toast.LENGTH_SHORT).show()
                 }
             }
 
