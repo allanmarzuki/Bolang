@@ -74,10 +74,9 @@ class activity_signup : AppCompatActivity() {
 
             })
 
-            val intent = Intent(this@activity_signup,loginActivity::class.java)
+            val intent = Intent(this@activity_signup,activity_sign_up_success::class.java)
             startActivity(intent)
 
-            Toast.makeText(applicationContext, "Registration Success", Toast.LENGTH_SHORT).show()
 
         }
 

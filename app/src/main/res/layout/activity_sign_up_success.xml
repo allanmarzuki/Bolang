@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.ngebolang.activity_sign_up_success">
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/success"
         android:layout_width="456dp"
-        android:layout_height="909dp"
+        android:layout_height="1000dp"
         android:src="@drawable/signup_success"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
