@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_profile_Activity"
+    android:background="@drawable/panjang_besar_bg"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+        <ScrollView
+            android:id="@+id/scrl_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="40dp">
+
+
+                <ImageView
+                    android:id="@+id/layout_image"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="118dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="118dp"
+                    android:src="@drawable/layout_image_profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/pensil_edit_imageprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="67dp"
+                    android:layout_marginTop="71dp"
+                    android:src="@drawable/edit_image"
+                    app:layout_constraintStart_toStartOf="@+id/layout_image"
+                    app:layout_constraintTop_toTopOf="@+id/layout_image" />
+
+                <ImageView
+                    android:id="@+id/layout_dlm_editprofile"
+                    android:layout_width="428dp"
+                    android:layout_height="639dp"
+                    android:layout_marginTop="44dp"
+                    android:src="@drawable/form_dalem_editprofile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.51"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_image" />
+
+                <TextView
+                    android:id="@+id/txt_view_editprofile"
+                    android:layout_width="161dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="117dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="117dp"
+                    android:fontFamily="@font/leelawadee"
+                    android:text="Edit Profile"
+                    android:textColor="#595D60"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintHorizontal_bias="0.646"
+                    app:layout_constraintStart_toStartOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintTop_toTopOf="@+id/layout_dlm_editprofile" />
+
+                <ImageView
+                    android:id="@+id/username_editpage"
+                    android:layout_width="353dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="21dp"
+                    android:src="@drawable/box_username"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/layout_dlm_editprofile" />
+
+                <EditText
+                    android:id="@+id/username_edit_profile"
+                    android:layout_width="316dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginBottom="11dp"
+                    android:hint="Username"
+                    android:editable="false"
+                    android:textColorHint="#D1D1D1"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/username_editpage"
+                    app:layout_constraintEnd_toEndOf="@+id/username_editpage"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/username_editpage"
+                    app:layout_constraintTop_toTopOf="@+id/username_editpage"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/nama_editpage"
+                    android:layout_width="353dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginEnd="21dp"
+                    android:src="@drawable/box_username"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintStart_toStartOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintTop_toTopOf="@+id/username_editpage"
+                    app:layout_constraintVertical_bias="0.132" />
+
+                <EditText
+                    android:id="@+id/nama_edit_profile"
+                    android:layout_width="316dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginEnd="19dp"
+                    android:hint="Name"
+                    android:textColorHint="#D1D1D1"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/nama_editpage"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/nama_editpage"
+                    app:layout_constraintTop_toTopOf="@+id/username_edit_profile"
+                    app:layout_constraintVertical_bias="0.132" />
+
+                <ImageView
+                    android:id="@+id/email_editpage"
+                    android:layout_width="353dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginEnd="21dp"
+                    android:src="@drawable/box_username"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintStart_toStartOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintTop_toTopOf="@+id/username_editpage"
+                    app:layout_constraintVertical_bias="0.265" />
+
+                <EditText
+                    android:id="@+id/email_edit_profile"
+                    android:layout_width="316dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginEnd="19dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#D1D1D1"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/email_editpage"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/email_editpage"
+                    app:layout_constraintTop_toTopOf="@+id/username_edit_profile"
+                    app:layout_constraintVertical_bias="0.264" />
+
+                <ImageView
+                    android:id="@+id/dateofbirth_editpage"
+                    android:layout_width="353dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginEnd="21dp"
+                    android:src="@drawable/box_username"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintStart_toStartOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintTop_toTopOf="@+id/username_editpage"
+                    app:layout_constraintVertical_bias="0.396" />
+
+                <EditText
+                    android:id="@+id/dateofbirth_edit_profile"
+                    android:layout_width="316dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginEnd="19dp"
+                    android:hint="Date of Birth"
+                    android:inputType="date"
+                    android:textColorHint="#D1D1D1"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/dateofbirth_editpage"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/dateofbirth_editpage"
+                    app:layout_constraintTop_toTopOf="@+id/username_edit_profile"
+                    app:layout_constraintVertical_bias="0.393" />
+
+                <ImageView
+                    android:id="@+id/phone_number_editpage"
+                    android:layout_width="353dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginEnd="21dp"
+                    android:src="@drawable/box_username"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintStart_toStartOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintTop_toTopOf="@+id/username_editpage"
+                    app:layout_constraintVertical_bias="0.528" />
+
+                <EditText
+                    android:id="@+id/phone_nmber_edit_profile"
+                    android:layout_width="316dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginEnd="19dp"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:textColorHint="#D1D1D1"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/phone_number_editpage"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="@+id/phone_number_editpage"
+                    app:layout_constraintTop_toTopOf="@+id/username_edit_profile"
+                    app:layout_constraintVertical_bias="0.526" />
+
+                <ImageView
+                    android:id="@+id/address_editpage"
+                    android:layout_width="353dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="21dp"
+                    android:src="@drawable/box_username"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintHorizontal_bias="0.529"
+                    app:layout_constraintStart_toStartOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintTop_toTopOf="@+id/username_editpage"
+                    app:layout_constraintVertical_bias="0.662" />
+
+                <EditText
+                    android:id="@+id/address_edit_profile"
+                    android:layout_width="316dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginEnd="19dp"
+                    android:hint="Address"
+                    android:inputType="textPostalAddress"
+                    android:textColorHint="#D1D1D1"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/address_editpage"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/address_editpage"
+                    app:layout_constraintTop_toTopOf="@+id/username_edit_profile"
+                    app:layout_constraintVertical_bias="0.658" />
+
+                <Button
+                    android:id="@+id/btn_save_editprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="676dp"
+                    android:width="125dp"
+                    android:height="43dp"
+                    android:background="@drawable/btn_login_bg"
+                    android:text="Save"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintHorizontal_bias="0.752"
+                    app:layout_constraintStart_toStartOf="@+id/layout_dlm_editprofile"
+                    app:layout_constraintTop_toTopOf="@+id/layout_dlm_editprofile" />
+
+                <Button
+                    android:id="@+id/btn_cancel_editprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="720dp"
+                    android:layout_marginEnd="200dp"
+                    android:width="125dp"
+                    android:height="43dp"
+                    android:background="@drawable/btn_login_bg"
+                    android:text="Cancel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_image" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
