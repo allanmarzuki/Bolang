@@ -19,32 +19,46 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="40dp">
+                android:paddingBottom="50dp">
 
 
-                <ImageView
-                    android:id="@+id/layout_image"
-                    android:layout_width="125dp"
-                    android:layout_height="125dp"
-                    android:layout_marginStart="118dp"
-                    android:layout_marginTop="52dp"
-                    android:layout_marginEnd="118dp"
-                    android:src="@drawable/layout_image_profile"
+                <View
+                    android:id="@+id/view_editprofile"
+                    android:layout_width="108dp"
+                    android:layout_height="108dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_view_circle_picture"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="@+id/con_2" />
 
                 <ImageView
-                    android:id="@+id/pensil_edit_imageprofile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="67dp"
-                    android:layout_marginTop="71dp"
-                    android:src="@drawable/edit_image"
-                    app:layout_constraintStart_toStartOf="@+id/layout_image"
-                    app:layout_constraintTop_toTopOf="@+id/layout_image" />
+                    android:id="@+id/photo_edit_profile"
+                    android:layout_width="108dp"
+                    android:layout_height="108dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/people_pict_edit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/con_2" />
+
+                <Button
+                    android:id="@+id/btn_add_new_photo"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="108dp"
+                    android:layout_marginEnd="131dp"
+                    android:background="@drawable/akal2an"
+                    android:drawableTop="@drawable/edit_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/con_2" />
 
                 <ImageView
                     android:id="@+id/layout_dlm_editprofile"
@@ -57,7 +71,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layout_image" />
+                    app:layout_constraintTop_toBottomOf="@id/view_editprofile" />
 
                 <TextView
                     android:id="@+id/txt_view_editprofile"
@@ -262,6 +276,21 @@
                     app:layout_constraintTop_toTopOf="@+id/username_edit_profile"
                     app:layout_constraintVertical_bias="0.658" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="we highly suggest you to use \nthe correct information"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:textColor="#595D60"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/leelawadee"
+                    android:lineSpacingExtra="9dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/address_edit_profile" />
+
                 <Button
                     android:id="@+id/btn_save_editprofile"
                     android:layout_width="wrap_content"
@@ -287,8 +316,7 @@
                     android:background="@drawable/btn_login_bg"
                     android:text="Cancel"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_image" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/view_editprofile" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
