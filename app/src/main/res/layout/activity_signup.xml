@@ -57,18 +57,19 @@
 
     <EditText
         android:id="@+id/nama"
-        android:layout_width="269dp"
+        android:layout_width="225dp"
         android:layout_height="55dp"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="18dp"
         android:background="@null"
         android:hint="Name"
+        android:inputType="textPersonName"
         android:textColor="#000000"
         android:textColorHint="#D1D1D1"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.316" />
@@ -98,18 +99,19 @@
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="269dp"
+        android:layout_width="225dp"
         android:layout_height="55dp"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="18dp"
         android:background="@null"
         android:hint="Username"
+        android:inputType="textPersonName"
         android:textColor="#000000"
         android:textColorHint="#D1D1D1"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.396" />
@@ -138,19 +140,20 @@
         app:layout_constraintVertical_bias="0.475"/>
 
     <EditText
-        android:id="@+id/email"
-        android:layout_width="269dp"
+        android:id="@+id/email_address"
+        android:layout_width="225dp"
         android:layout_height="55dp"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="18dp"
         android:background="@null"
         android:hint="Email"
+        android:inputType="textEmailAddress"
         android:textColor="#000000"
         android:textColorHint="#D1D1D1"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.476" />
@@ -180,7 +183,7 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="269dp"
+        android:layout_width="225dp"
         android:layout_height="55dp"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="18dp"
@@ -192,7 +195,7 @@
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.555" />

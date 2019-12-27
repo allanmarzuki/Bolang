@@ -19,5 +19,6 @@ class Home_Activity : AppCompatActivity() {
             val goto_user_page = Intent(this, Edit_profile_Activity::class.java)
             startActivity(goto_user_page)
         }
+
     }
 }
