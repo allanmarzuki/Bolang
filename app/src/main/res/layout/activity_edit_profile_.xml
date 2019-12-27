@@ -133,6 +133,7 @@
                     app:layout_constraintTop_toTopOf="@+id/username_editpage"
                     app:layout_constraintVertical_bias="0.132" />
 
+
                 <EditText
                     android:id="@+id/nama_edit_profile"
                     android:layout_width="316dp"
@@ -304,8 +305,6 @@
                     app:layout_constraintHorizontal_bias="0.752"
                     app:layout_constraintStart_toStartOf="@+id/layout_dlm_editprofile"
                     app:layout_constraintTop_toTopOf="@+id/layout_dlm_editprofile" />
-
-
 
                 <Button
                     android:id="@+id/btn_cancel_editprofile"
